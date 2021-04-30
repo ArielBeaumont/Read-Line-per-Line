@@ -1,0 +1,16 @@
+jTextField1.setText("");
+            try {
+                RandomAccessFile usuarioID = new RandomAccessFile("registers.txt", "r");
+            try {
+                String strID;
+                while((strID = usuarioID.readLine())!= null){
+                    System.out.println(strID);
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(AppMenu.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(AppMenu.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            // change variable ir need, and the .text or change what u gonna do (jtext change is the example)
